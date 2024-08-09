@@ -12,3 +12,4 @@ steps:
       - '--region=$_REGION'
       - '--entry-point=$_FUNCTION_ENTRY_POINT'
       - '--gen2'
+      - '--allow-unauthenticated'
