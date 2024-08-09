@@ -5,7 +5,7 @@ steps:
     args:
       - 'functions'
       - 'deploy'
-      - '$_ClOUD_FUNCTION_NAME'
+      - 'test-cicd'
       - '--runtime=python310'
       - '--service-account=$_FUNCTION_SERVICE_ACCOUNT@$_PROJECT_ID.iam.gserviceaccount.com'
       - '--trigger-http'
