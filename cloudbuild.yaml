@@ -1,0 +1,12 @@
+steps:
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args:
+      - 'functions'
+      - 'deploy'
+      - '$_ClOUD_FUNCTION_NAME'
+      - '--runtime=python310'
+      - '--service-account=$_FUNCTION_SERVICE_ACCOUNT@$_PROJECT_ID.iam.gserviceaccount.com'
+      - '--trigger-http'
+      - '--region=$_REGION'
+      - '--entry-point=$_FUNCTION_ENTRY_POINT'
+      - '--gen2'
